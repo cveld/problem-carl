@@ -4,8 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "rm -rf ./dist && ng build && yarn build:concat",
-    "build:concat": "cat dist/fbp-elements/runtime-es5.js dist/fbp-elements/polyfills-es5.js dist/fbp-elements/main-es5.js > ./dist/fbp-bundle.js",
+    "build": "ng build && yarn build:concat",
+    "build:concat": "concat -o ./dist/fbp-bundle.js dist/fbp-elements/runtime-es5.js dist/fbp-elements/polyfills-es5.js dist/fbp-elements/main-es5.js",
     "build:bundle": "ts-node ./scripts/bundle.ts",
     "test": "ng test",
     "lint": "ng lint",
