@@ -4,13 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build && yarn build:concat",
-    "build:concat": "concat -o ./dist/fbp-bundle.js dist/fbp-elements/runtime-es5.js dist/fbp-elements/polyfills-es5.js dist/fbp-elements/main-es5.js",
+    "build": "ng build els --prod --output-hashing=none && yarn build:concat",
+    "build:concat": "concat -o ./dist/fbp-elements.js dist/els/runtime-es5.js dist/els/polyfills-es5.js dist/els/main-es5.js",
     "build:bundle": "ts-node ./scripts/bundle.ts",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "demo": "npx live-server dist/fbp-elements/"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

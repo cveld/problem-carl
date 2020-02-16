@@ -31,7 +31,17 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/@scaljeri/fbp-elements/dist/fbp-bundle.js"
+              // "node_modules/@scaljeri/fbp-elements/dist/fbp-bundle.js"
+              // "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/runtime-es2015.js" type="module"></script>
+              // "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/polyfills-es2015.js" type="module"></script>
+              // "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/styles-es2015.js" type="module"></script>
+              // "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/vendor-es2015.js" type="module"></script>
+              // "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/main-es2015.js" type="module"></script>
+              // "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/runtime-es5.js",
+              // "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/polyfills-es5.js",
+              "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/styles-es5.js",
+              "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/vendor-es5.js",
+              "node_modules/@scaljeri/fbp-elements/dist/fbp-elements/main-es5.js"
             ]
           },
           "configurations": {
